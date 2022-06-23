@@ -7,18 +7,15 @@ using UnityEngine.InputSystem;
 
 public class DrawLineManager : MonoBehaviour
 {
-    //creates a public field for us to drop the controller's tracking location
+    public Material LMAT;
+
     public InputActionReference trackedObj = null;
 
     public InputActionReference pressedDraw = null;
 
-    public InputActionReference heldDraw = null;
-
     private MeshLineRenderer currentLine;
 
     private int numClicks = 0;
-
-    bool isActive = false;
 
     private void OnEnable()
     {
@@ -37,6 +34,7 @@ public class DrawLineManager : MonoBehaviour
         go.AddComponent<MeshRenderer>();
         currentLine = go.AddComponent<MeshLineRenderer>();
 
+        currentLine.lmat = LMAT;
         currentLine.setWidth(.1f);
 
         numClicks = 0;

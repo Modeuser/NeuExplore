@@ -25,7 +25,7 @@ public class MeshLineRenderer : MonoBehaviour
 
 	void Start()
 	{
-		//ml meshfilter gets th mesh
+		//ml meshfilter gets the mesh
 		ml = GetComponent<MeshFilter>().mesh;
 		//set the material of the meshRenderer to "lmat"
 		GetComponent<MeshRenderer>().material = lmat;
