@@ -16,19 +16,24 @@ public class MeshLineRenderer : MonoBehaviour
 	public Material lmat;
 	//instance for mesh
 	private Mesh ml;
-	//vector "s" to keep track of where the previous start point was
+	//vector "s" to keep track of where the start point was
 	private Vector3 s;
 	//private variable for the line size, set to public if/when a line size modifier is added
 	private float lineSize = .1f;
 	//check if this was the first quad we've drawn
 	private bool firstQuad = true;
 
+	GameObject rightCon;
+
 	void Start()
 	{
 		//ml meshfilter gets the mesh
 		ml = GetComponent<MeshFilter>().mesh;
-		//set the material of the meshRenderer to "lmat"
+		//set the material of the meshRenderer to "lmat", as defined by us
 		GetComponent<MeshRenderer>().material = lmat;
+
+		//find the right con
+		rightCon = GameObject.FindWithTag("GameController");
 	}
 
 	public void setWidth(float width)
@@ -38,13 +43,11 @@ public class MeshLineRenderer : MonoBehaviour
 
 	public void AddPoint(Vector3 point)
 	{
-		//can replace with "firstQuad"
 		if (s != Vector3.zero)
 		{
 			AddLine(ml, MakeQuad(s, point, lineSize, firstQuad));
 			firstQuad = false;
 		}
-
 		s = point;
 	}
 
@@ -57,7 +60,7 @@ public class MeshLineRenderer : MonoBehaviour
 		Vector3[] q;
 		if (all)
 		{
-			//if the is the first quad, then we need 4 points in the array
+			//if this is the first quad, then we need 4 points in the array
 			q = new Vector3[4];
 		}
 		else
@@ -68,8 +71,13 @@ public class MeshLineRenderer : MonoBehaviour
 
 		//the "n"ormal is the cross product of "start" and "end"
 		Vector3 n = Vector3.Cross(s, e);
-		//the "l"ine would then be the cross product of the normal and e - s
-		Vector3 l = Vector3.Cross(n, e - s);
+		//the "l"ine would then be the cross product of the "n"ormal and e - s
+		//Vector3 l = Vector3.Cross(n, e - s);
+		//Just track the forward transform of the controller:
+		Vector3 l = Vector3.Cross(rightCon.transform.forward, e - s);
+		//the alternative below will cause the stroke's to always face the direction of the headset's forward:
+		//Vector3 l = Vector3.Cross(Camera.main.transform.forward, e - s);
+		//should be able to create a variable that tracks the transform.forward of the controller instead of the headset
 		l.Normalize();
 
 		if (all)
@@ -82,7 +90,7 @@ public class MeshLineRenderer : MonoBehaviour
 		}
 		else
 		{
-			//if this is not the first quad, dine these 2 points to reference
+			//if this is not the first quad, define these 2 points to reference
 			q[0] = transform.InverseTransformPoint(s + l * w);
 			q[1] = transform.InverseTransformPoint(s + l * -w);
 		}
@@ -92,6 +100,8 @@ public class MeshLineRenderer : MonoBehaviour
 	//"AddLine": adds the mesh onto the quads that we've constructed in "makequads"
 	void AddLine(Mesh m, Vector3[] quad)
 	{
+		//the integer array tells the mesh the order by which the triangles
+		//should be constructed
 		int vl = m.vertices.Length;
 
 		Vector3[] vs = m.vertices;

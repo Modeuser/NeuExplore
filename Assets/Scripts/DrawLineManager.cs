@@ -35,6 +35,7 @@ public class DrawLineManager : MonoBehaviour
         currentLine = go.AddComponent<MeshLineRenderer>();
 
         currentLine.lmat = LMAT;
+        //setWidth is a function in MeshLineRenderer
         currentLine.setWidth(.1f);
 
         numClicks = 0;
@@ -45,10 +46,10 @@ public class DrawLineManager : MonoBehaviour
         int ipDraw = (int)pDraw;
         if (ipDraw == 1)
         {
+            //get the positional info of the controller
             Vector3 TrackedTransform = trackedObj.action.ReadValue<Vector3>();
             currentLine.AddPoint(TrackedTransform);
             numClicks++;
-            print(ipDraw);
         }
     }
 }
