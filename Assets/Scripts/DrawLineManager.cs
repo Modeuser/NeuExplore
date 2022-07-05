@@ -36,7 +36,7 @@ public class DrawLineManager : MonoBehaviour
 
         currentLine.lmat = LMAT;
         //setWidth is a function in MeshLineRenderer
-        currentLine.setWidth(.1f);
+        currentLine.setWidth(.05f);
 
         numClicks = 0;
     }
