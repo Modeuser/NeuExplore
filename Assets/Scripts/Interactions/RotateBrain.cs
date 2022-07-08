@@ -9,10 +9,10 @@ public class RotateBrain : MonoBehaviour
     {
         if (leftisTrue)
         {
-            gameObject.transform.Rotate(Vector3.up, rotateSpeed);
+            gameObject.transform.Rotate(Vector3.right, rotateSpeed);
         } else
         {
-            gameObject.transform.Rotate(Vector3.up, -rotateSpeed);
+            gameObject.transform.Rotate(Vector3.right, -rotateSpeed);
         }
     }
 }
