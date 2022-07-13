@@ -11,6 +11,9 @@ public class DrawLineManager : MonoBehaviour
 
     public InputActionReference trackedObj = null;
 
+    //testing new tracking transform
+    public Transform trackedController = null;
+
     public InputActionReference pressedDraw = null;
 
     private MeshLineRenderer currentLine;
@@ -30,6 +33,9 @@ public class DrawLineManager : MonoBehaviour
     private void ToggleDraw(InputAction.CallbackContext context)
     {
         GameObject go = new GameObject();
+        //add a transform modifier for the stroke to be generated at player position
+        go.transform.position = new Vector3(-4, 0, 5.7f);
+        //although new object was made in that position, mesh is still generated at zero
         go.AddComponent<MeshFilter>();
         go.AddComponent<MeshRenderer>();
         currentLine = go.AddComponent<MeshLineRenderer>();
@@ -48,7 +54,10 @@ public class DrawLineManager : MonoBehaviour
         {
             //get the positional info of the controller
             Vector3 TrackedTransform = trackedObj.action.ReadValue<Vector3>();
-            currentLine.AddPoint(TrackedTransform);
+            //get controller game object instead of the above
+            Vector3 trackedcontrollertrans = trackedController.position;
+            currentLine.AddPoint(trackedcontrollertrans);
+            //currentLine.AddPoint(TrackedTransform);
             numClicks++;
         }
     }
