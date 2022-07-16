@@ -1,5 +1,14 @@
 {
   "dependencies": {
+    "com.dgreenheck.openfracture": {
+      "version": "file:../OpenFracture-main",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.unity.test-framework": "1.1.30",
+        "com.unity.testtools.codecoverage": "1.0.1"
+      }
+    },
     "com.unity.collab-proxy": {
       "version": "1.15.16",
       "depth": 0,

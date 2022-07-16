@@ -3,7 +3,107 @@ guid: f091b9e0320382544ac5c1b63f2dec34
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 3rd_ventricle_material
+    second: {fileID: 2100000, guid: 2553d8cbdcdab564ea5951d71f201462, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 4th_ventricle_material
+    second: {fileID: 2100000, guid: 49d136374ea08df4ea18843d1ac6a5e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Thalamus_material.001
+    second: {fileID: 2100000, guid: c173c3c5aa472b34092e1f53b45128bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: accumbens
+    second: {fileID: 2100000, guid: e4fc659403477284daede511cc0ad831, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: accumbens.002
+    second: {fileID: 2100000, guid: be7cef69e5ff35545ab851e5aabcc78f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: amigdala_material
+    second: {fileID: 2100000, guid: 075cbce6d129c8a4db3cc35ae85c20bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: caudate_material
+    second: {fileID: 2100000, guid: 114061cd5c29d6d4da13f12b0b7ca637, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cerebellum_material
+    second: {fileID: 2100000, guid: b0cdc5475f9c8754f9d6f0bc9ace7994, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: defaultMat
+    second: {fileID: 2100000, guid: 3cf91ee947fb06c4ebe72751b71d550d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fornix_material
+    second: {fileID: 2100000, guid: 943faa749cee36f42b84495e9dcad40b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hypophisis
+    second: {fileID: 2100000, guid: 9beb51e68eeba8f4aaf4d566b777516f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hyppocampus_material
+    second: {fileID: 2100000, guid: e38e5016f1283504a8bc1065568a14ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lateral_ventricle_material
+    second: {fileID: 2100000, guid: 3da6737717913064eb1f0e4e6f9e7538, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: left_hemi_material
+    second: {fileID: 2100000, guid: 837594c43c5b1e44595729353ed8b8ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: medulla_material.001
+    second: {fileID: 2100000, guid: 5b7e0b31bb7a3504993b7d8000ded442, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: middle_brain_material
+    second: {fileID: 2100000, guid: c7bdd3feede21dc49963820d2439d1a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nervus_olphactorius_material.001
+    second: {fileID: 2100000, guid: 53147ea932d5d33489f5e0dc47b870b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ophtalmicus_material.001
+    second: {fileID: 2100000, guid: 442c579213733e7409811b3d51749fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: putamen_material.001
+    second: {fileID: 2100000, guid: 0f0af7177862f774ea49ee2a6e5a8459, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: right_hemi_material
+    second: {fileID: 2100000, guid: 72242a56654aab340adaf588d7395166, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -32,7 +132,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 0
+    isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
