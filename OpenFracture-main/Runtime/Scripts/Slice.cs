@@ -130,6 +130,12 @@ public class Slice : MonoBehaviour
         // Now we need to attach the transform of the attachpoint onto the XRGrabComponent for each fragment
         XRComponent.attachTransform = attachpoint.transform;
 
+        //add Paint3D components... maybe when the materials aren't all mixed up...
+        //var P3D = obj.AddComponent<PaintIn3D.P3dPaintable>();
+        //var P3DT = obj.AddComponent<PaintIn3D.P3dPaintableTexture>();
+        //var P3DC = obj.AddComponent<PaintIn3D.P3dMaterialCloner>();
+        //P3DC.Index = 1;
+
         // If refracturing is enabled, create a copy of this component and add it to the template fragment object
         if (this.sliceOptions.enableReslicing &&
            (this.currentSliceCount < this.sliceOptions.maxResliceCount))
