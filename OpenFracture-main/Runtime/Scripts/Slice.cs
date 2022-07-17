@@ -97,6 +97,9 @@ public class Slice : MonoBehaviour
             this.GetComponent<MeshRenderer>().sharedMaterial,
             this.sliceOptions.insideMaterial
         };
+        // disable the lighting settings for now
+        meshRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+        meshRenderer.receiveShadows = false;
 
         // Copy collider properties to fragment
         var thisCollider = this.GetComponent<Collider>();

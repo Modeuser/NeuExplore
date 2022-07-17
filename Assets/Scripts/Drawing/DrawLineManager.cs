@@ -36,13 +36,21 @@ public class DrawLineManager : MonoBehaviour
         //add a transform modifier for the stroke to be generated at player position
         go.transform.position = new Vector3(-4, 0, 5.7f);
         //although new object was made in that position, mesh is still generated at zero
+        //set the lighting layer of the stroke to "anatomy" for testing purposes for now
+        int AnatomyLayer = LayerMask.NameToLayer("Anatomy");
+        go.layer = AnatomyLayer;
+        //remove later
         go.AddComponent<MeshFilter>();
-        go.AddComponent<MeshRenderer>();
+        var meshRenderer = go.AddComponent<MeshRenderer>();
+        //remove lighting settings
+        meshRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+        meshRenderer.receiveShadows = false;
+        // remove later
         currentLine = go.AddComponent<MeshLineRenderer>();
 
         currentLine.lmat = LMAT;
         //setWidth is a function in MeshLineRenderer
-        currentLine.setWidth(.05f);
+        currentLine.setWidth(.01f);
 
         numClicks = 0;
     }
