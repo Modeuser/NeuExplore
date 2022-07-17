@@ -114,14 +114,18 @@ public class Slice : MonoBehaviour
         fragmentRigidBody.angularDrag = thisRigidBody.angularDrag;
         fragmentRigidBody.useGravity = thisRigidBody.useGravity;
 
+        //create a child gameobject to set as attachpoint
+        GameObject attachpoint = new GameObject();
+        attachpoint.transform.SetParent(obj.transform);
+        attachpoint.AddComponent<CenterSlice>();
+
         //Mo.na Copy XR grab to this fragment, no inherits, just default grab values
         var XRComponent = obj.AddComponent<XRGrabInteractable>();
         XRComponent.forceGravityOnDetach = false;
         XRComponent.trackRotation = true;
         XRComponent.throwOnDetach = false;
-        //Mo.na have the attachment point be at world position instead of local position
-        //5/12/noon testing the parent-child method of re-centering game object
-        //This is not reasonable (doc comment 1)
+        // Now we need to attach the transform of the attachpoint onto the XRGrabComponent for each fragment
+        XRComponent.attachTransform = attachpoint.transform;
 
         // If refracturing is enabled, create a copy of this component and add it to the template fragment object
         if (this.sliceOptions.enableReslicing &&
