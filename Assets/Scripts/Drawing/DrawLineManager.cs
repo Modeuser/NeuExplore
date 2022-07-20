@@ -9,8 +9,6 @@ public class DrawLineManager : MonoBehaviour
 {
     public Material LMAT;
 
-    public InputActionReference trackedObj = null;
-
     //testing new tracking transform
     public Transform trackedController = null;
 
@@ -60,12 +58,9 @@ public class DrawLineManager : MonoBehaviour
         int ipDraw = (int)pDraw;
         if (ipDraw == 1)
         {
-            //get the positional info of the controller
-            Vector3 TrackedTransform = trackedObj.action.ReadValue<Vector3>();
             //get controller game object instead of the above
             Vector3 trackedcontrollertrans = trackedController.position;
             currentLine.AddPoint(trackedcontrollertrans);
-            //currentLine.AddPoint(TrackedTransform);
             numClicks++;
         }
     }
