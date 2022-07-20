@@ -74,9 +74,9 @@ public class MeshLineRenderer : MonoBehaviour
 		//the "l"ine would then be the cross product of the "n"ormal and e - s
 		//Vector3 l = Vector3.Cross(n, e - s);
 		//Just track the forward transform of the controller:
-		Vector3 l = Vector3.Cross(rightCon.transform.forward, e - s);
+		//Vector3 l = Vector3.Cross(rightCon.transform.forward, e - s);
 		//the alternative below will cause the stroke's to always face the direction of the headset's forward:
-		//Vector3 l = Vector3.Cross(Camera.main.transform.forward, e - s);
+		Vector3 l = Vector3.Cross(Camera.main.transform.forward, e - s);
 		//should be able to create a variable that tracks the transform.forward of the controller instead of the headset
 		l.Normalize();
 
