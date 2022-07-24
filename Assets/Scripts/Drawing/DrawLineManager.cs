@@ -7,7 +7,10 @@ using UnityEngine.InputSystem;
 
 public class DrawLineManager : MonoBehaviour
 {
-    public Material LMAT;
+    public Material GMAT;
+    public Material BMAT;
+    public Material RMAT;
+    private Material CurrentMAT;
 
     //testing new tracking transform
     public Transform trackedController = null;
@@ -16,7 +19,32 @@ public class DrawLineManager : MonoBehaviour
 
     private MeshLineRenderer currentLine;
 
-    private int numClicks = 0;
+    private int StrokeCount = 0;
+
+    private float Thickness = 0.01f;
+
+    public void ColorPicked(string Color)
+    {
+        //testing color switching
+        switch (Color)
+        {
+            case "blue":
+                CurrentMAT = BMAT;
+                break;
+            case "red":
+                CurrentMAT = RMAT;
+                break;
+            case "green":
+                CurrentMAT = GMAT;
+                break;
+        }
+    }
+
+    //testing thickness settings
+    public void ThicknessSlider (float ThicknessValue)
+    {
+        Thickness = ThicknessValue;
+    }
 
     private void OnEnable()
     {
@@ -35,8 +63,8 @@ public class DrawLineManager : MonoBehaviour
         go.transform.position = new Vector3(-4, 0, 5.7f);
         //although new object was made in that position, mesh is still generated at zero
         //set the lighting layer of the stroke to "anatomy" for testing purposes for now
-        int AnatomyLayer = LayerMask.NameToLayer("Anatomy");
-        go.layer = AnatomyLayer;
+        int PenLayer = LayerMask.NameToLayer("penstroke");
+        go.layer = PenLayer;
         //remove later
         go.AddComponent<MeshFilter>();
         var meshRenderer = go.AddComponent<MeshRenderer>();
@@ -46,11 +74,13 @@ public class DrawLineManager : MonoBehaviour
         // remove later
         currentLine = go.AddComponent<MeshLineRenderer>();
 
-        currentLine.lmat = LMAT;
+        currentLine.lmat = CurrentMAT;
         //setWidth is a function in MeshLineRenderer
-        currentLine.setWidth(.01f);
+        currentLine.setWidth(Thickness);
 
-        numClicks = 0;
+        //testing
+        StrokeCount++;
+        go.name = "Stroke" + StrokeCount;
     }
     void Update()
     {
@@ -61,7 +91,6 @@ public class DrawLineManager : MonoBehaviour
             //get controller game object instead of the above
             Vector3 trackedcontrollertrans = trackedController.position;
             currentLine.AddPoint(trackedcontrollertrans);
-            numClicks++;
         }
     }
 }
