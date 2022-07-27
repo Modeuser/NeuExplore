@@ -1113,6 +1113,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "JoyStick",
+                    "type": "Value",
+                    "id": "724829da-dfe1-4e26-8e90-397723f099de",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "A button",
+                    "type": "Button",
+                    "id": "0f73f791-2285-484a-ba3c-c5e9bae1c8d8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1157,6 +1175,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Pressed",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "29a3dba5-042f-4215-99a9-aeba831fa3c6",
+                    "path": "<OculusTouchController>{RightHand}/thumbstick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoyStick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8b65dfdb-5b1d-462c-87e8-db13a0d8b0c1",
+                    "path": "<OculusTouchController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "A button",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

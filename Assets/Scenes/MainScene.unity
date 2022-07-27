@@ -132,10 +132,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7413982}
-  - component: {fileID: 7413985}
   - component: {fileID: 7413984}
   - component: {fileID: 7413983}
-  - component: {fileID: 7413986}
+  - component: {fileID: 7413985}
   m_Layer: 0
   m_Name: 3rd ventricle group
   m_TagString: groups
@@ -201,14 +200,38 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7413985}
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1962280805}
+        m_TargetAssemblyTypeName: AnatomyName, Assembly-CSharp
+        m_MethodName: NameChanged
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 3rd Ventricle
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7413985}
-        m_TargetAssemblyTypeName: UnParent, Assembly-CSharp
-        m_MethodName: UnparentObject
-        m_Mode: 1
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -261,7 +284,7 @@ MonoBehaviour:
   m_SmoothPosition: 1
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
-  m_TrackRotation: 1
+  m_TrackRotation: 0
   m_SmoothRotation: 1
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
@@ -312,21 +335,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7413981}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f049bde955f4e046a2557c5352e3d3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c2e3f1593156f84a9dd7c0b45d59299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7413986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7413981}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7b531906fad09a4499f6c124f8b6596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  ActZone: {fileID: 5310131084079386521, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  AxisInput: {fileID: 2719944015057279236, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1001 &29575535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2002,10 +2015,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 247699824}
-  - component: {fileID: 247699827}
   - component: {fileID: 247699826}
   - component: {fileID: 247699825}
-  - component: {fileID: 247699828}
+  - component: {fileID: 247699827}
   m_Layer: 0
   m_Name: Laterial ventricle group
   m_TagString: groups
@@ -2071,14 +2083,38 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 247699827}
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1962280805}
+        m_TargetAssemblyTypeName: AnatomyName, Assembly-CSharp
+        m_MethodName: NameChanged
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Lateral Ventricle
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 247699827}
-        m_TargetAssemblyTypeName: UnParent, Assembly-CSharp
-        m_MethodName: UnparentObject
-        m_Mode: 1
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2131,7 +2167,7 @@ MonoBehaviour:
   m_SmoothPosition: 1
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
-  m_TrackRotation: 1
+  m_TrackRotation: 0
   m_SmoothRotation: 1
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
@@ -2182,21 +2218,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 247699823}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f049bde955f4e046a2557c5352e3d3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c2e3f1593156f84a9dd7c0b45d59299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &247699828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 247699823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7b531906fad09a4499f6c124f8b6596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  ActZone: {fileID: 5310131084079386521, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  AxisInput: {fileID: 2719944015057279236, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1001 &285654076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2285,10 +2311,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 293844901}
-  - component: {fileID: 293844904}
   - component: {fileID: 293844903}
   - component: {fileID: 293844902}
-  - component: {fileID: 293844905}
+  - component: {fileID: 293844904}
   m_Layer: 0
   m_Name: Hypothalamus group
   m_TagString: groups
@@ -2354,14 +2379,38 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 293844904}
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1962280805}
+        m_TargetAssemblyTypeName: AnatomyName, Assembly-CSharp
+        m_MethodName: NameChanged
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Hypothalamus
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 293844904}
-        m_TargetAssemblyTypeName: UnParent, Assembly-CSharp
-        m_MethodName: UnparentObject
-        m_Mode: 1
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2414,7 +2463,7 @@ MonoBehaviour:
   m_SmoothPosition: 1
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
-  m_TrackRotation: 1
+  m_TrackRotation: 0
   m_SmoothRotation: 1
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
@@ -2465,21 +2514,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 293844900}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f049bde955f4e046a2557c5352e3d3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c2e3f1593156f84a9dd7c0b45d59299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &293844905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 293844900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7b531906fad09a4499f6c124f8b6596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  ActZone: {fileID: 5310131084079386521, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  AxisInput: {fileID: 2719944015057279236, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1001 &303523511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2560,10 +2599,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 311637066}
-  - component: {fileID: 311637069}
   - component: {fileID: 311637068}
   - component: {fileID: 311637067}
-  - component: {fileID: 311637070}
+  - component: {fileID: 311637069}
   m_Layer: 0
   m_Name: Medulla group
   m_TagString: groups
@@ -2629,14 +2667,38 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 311637069}
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1962280805}
+        m_TargetAssemblyTypeName: AnatomyName, Assembly-CSharp
+        m_MethodName: NameChanged
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Medulla
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 311637069}
-        m_TargetAssemblyTypeName: UnParent, Assembly-CSharp
-        m_MethodName: UnparentObject
-        m_Mode: 1
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2689,7 +2751,7 @@ MonoBehaviour:
   m_SmoothPosition: 1
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
-  m_TrackRotation: 1
+  m_TrackRotation: 0
   m_SmoothRotation: 1
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
@@ -2740,21 +2802,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 311637065}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f049bde955f4e046a2557c5352e3d3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c2e3f1593156f84a9dd7c0b45d59299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &311637070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 311637065}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7b531906fad09a4499f6c124f8b6596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  ActZone: {fileID: 5310131084079386521, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  AxisInput: {fileID: 2719944015057279236, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &326573507
 GameObject:
   m_ObjectHideFlags: 0
@@ -5886,10 +5938,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 641243970}
-  - component: {fileID: 641243973}
   - component: {fileID: 641243972}
   - component: {fileID: 641243971}
-  - component: {fileID: 641243974}
+  - component: {fileID: 641243973}
   m_Layer: 0
   m_Name: Olfactory group
   m_TagString: groups
@@ -5955,14 +6006,38 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 641243973}
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1962280805}
+        m_TargetAssemblyTypeName: AnatomyName, Assembly-CSharp
+        m_MethodName: NameChanged
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Olfactory Nerves
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 641243973}
-        m_TargetAssemblyTypeName: UnParent, Assembly-CSharp
-        m_MethodName: UnparentObject
-        m_Mode: 1
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6015,7 +6090,7 @@ MonoBehaviour:
   m_SmoothPosition: 1
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
-  m_TrackRotation: 1
+  m_TrackRotation: 0
   m_SmoothRotation: 1
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
@@ -6066,21 +6141,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 641243969}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f049bde955f4e046a2557c5352e3d3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c2e3f1593156f84a9dd7c0b45d59299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &641243974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 641243969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7b531906fad09a4499f6c124f8b6596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  ActZone: {fileID: 5310131084079386521, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  AxisInput: {fileID: 2719944015057279236, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &655916827
 GameObject:
   m_ObjectHideFlags: 0
@@ -7541,10 +7606,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 849128165}
-  - component: {fileID: 849128168}
   - component: {fileID: 849128167}
   - component: {fileID: 849128166}
-  - component: {fileID: 849128169}
+  - component: {fileID: 849128168}
   m_Layer: 0
   m_Name: Thalamus
   m_TagString: groups
@@ -7610,14 +7674,38 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 849128168}
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1962280805}
+        m_TargetAssemblyTypeName: AnatomyName, Assembly-CSharp
+        m_MethodName: NameChanged
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Thalamus
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 849128168}
-        m_TargetAssemblyTypeName: UnParent, Assembly-CSharp
-        m_MethodName: UnparentObject
-        m_Mode: 1
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7670,7 +7758,7 @@ MonoBehaviour:
   m_SmoothPosition: 1
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
-  m_TrackRotation: 1
+  m_TrackRotation: 0
   m_SmoothRotation: 1
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
@@ -7721,21 +7809,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 849128164}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f049bde955f4e046a2557c5352e3d3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c2e3f1593156f84a9dd7c0b45d59299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &849128169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 849128164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7b531906fad09a4499f6c124f8b6596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  ActZone: {fileID: 5310131084079386521, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  AxisInput: {fileID: 2719944015057279236, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &853023799
 GameObject:
   m_ObjectHideFlags: 0
@@ -8435,6 +8513,7 @@ RectTransform:
   - {fileID: 976297525}
   - {fileID: 2142330150}
   - {fileID: 1632321393}
+  - {fileID: 1962280802}
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 18.372, y: -180, z: 0}
@@ -8807,10 +8886,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 990434984}
-  - component: {fileID: 990434987}
   - component: {fileID: 990434986}
   - component: {fileID: 990434985}
-  - component: {fileID: 990434988}
+  - component: {fileID: 990434987}
   m_Layer: 0
   m_Name: Pedunculis group
   m_TagString: groups
@@ -8876,14 +8954,38 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 990434987}
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1962280805}
+        m_TargetAssemblyTypeName: AnatomyName, Assembly-CSharp
+        m_MethodName: NameChanged
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Pedunculis
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 990434987}
-        m_TargetAssemblyTypeName: UnParent, Assembly-CSharp
-        m_MethodName: UnparentObject
-        m_Mode: 1
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8936,7 +9038,7 @@ MonoBehaviour:
   m_SmoothPosition: 1
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
-  m_TrackRotation: 1
+  m_TrackRotation: 0
   m_SmoothRotation: 1
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
@@ -8987,21 +9089,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 990434983}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f049bde955f4e046a2557c5352e3d3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c2e3f1593156f84a9dd7c0b45d59299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &990434988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 990434983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7b531906fad09a4499f6c124f8b6596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  ActZone: {fileID: 5310131084079386521, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  AxisInput: {fileID: 2719944015057279236, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &1000156141
 GameObject:
   m_ObjectHideFlags: 0
@@ -9322,10 +9414,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1049905928}
-  - component: {fileID: 1049905931}
   - component: {fileID: 1049905930}
   - component: {fileID: 1049905929}
-  - component: {fileID: 1049905932}
+  - component: {fileID: 1049905931}
   m_Layer: 0
   m_Name: Optical group
   m_TagString: groups
@@ -9391,14 +9482,38 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1049905931}
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1962280805}
+        m_TargetAssemblyTypeName: AnatomyName, Assembly-CSharp
+        m_MethodName: NameChanged
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Optical Nerves
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1049905931}
-        m_TargetAssemblyTypeName: UnParent, Assembly-CSharp
-        m_MethodName: UnparentObject
-        m_Mode: 1
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9451,7 +9566,7 @@ MonoBehaviour:
   m_SmoothPosition: 1
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
-  m_TrackRotation: 1
+  m_TrackRotation: 0
   m_SmoothRotation: 1
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
@@ -9502,21 +9617,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1049905927}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f049bde955f4e046a2557c5352e3d3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c2e3f1593156f84a9dd7c0b45d59299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1049905932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1049905927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7b531906fad09a4499f6c124f8b6596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  ActZone: {fileID: 5310131084079386521, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  AxisInput: {fileID: 2719944015057279236, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &1051412582
 GameObject:
   m_ObjectHideFlags: 0
@@ -9710,8 +9815,7 @@ GameObject:
   - component: {fileID: 1063606133}
   - component: {fileID: 1063606136}
   - component: {fileID: 1063606135}
-  - component: {fileID: 1063606134}
-  - component: {fileID: 1063606137}
+  - component: {fileID: 1063606138}
   m_Layer: 0
   m_Name: LeftHemiGroup
   m_TagString: groups
@@ -9735,18 +9839,6 @@ Transform:
   m_Father: {fileID: 543450653045989281}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1063606134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1063606132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f049bde955f4e046a2557c5352e3d3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1063606135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9789,14 +9881,38 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1063606138}
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1962280805}
+        m_TargetAssemblyTypeName: AnatomyName, Assembly-CSharp
+        m_MethodName: NameChanged
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Left Hemisphere
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1063606134}
-        m_TargetAssemblyTypeName: UnParent, Assembly-CSharp
-        m_MethodName: UnparentObject
-        m_Mode: 1
+      - m_Target: {fileID: 1063606138}
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9849,7 +9965,7 @@ MonoBehaviour:
   m_SmoothPosition: 1
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
-  m_TrackRotation: 1
+  m_TrackRotation: 0
   m_SmoothRotation: 1
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
@@ -9891,7 +10007,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1063606137
+--- !u!114 &1063606138
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9900,9 +10016,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1063606132}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7b531906fad09a4499f6c124f8b6596, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c2e3f1593156f84a9dd7c0b45d59299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ActZone: {fileID: 5310131084079386521, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  AxisInput: {fileID: 2719944015057279236, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &1080419531
 GameObject:
   m_ObjectHideFlags: 0
@@ -10098,7 +10216,6 @@ GameObject:
   - component: {fileID: 1142459637}
   - component: {fileID: 1142459640}
   - component: {fileID: 1142459639}
-  - component: {fileID: 1142459638}
   - component: {fileID: 1142459641}
   m_Layer: 0
   m_Name: RightHemiGroup
@@ -10123,18 +10240,6 @@ Transform:
   m_Father: {fileID: 543450653045989281}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1142459638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1142459636}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f049bde955f4e046a2557c5352e3d3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1142459639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10177,14 +10282,38 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1142459641}
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1962280805}
+        m_TargetAssemblyTypeName: AnatomyName, Assembly-CSharp
+        m_MethodName: NameChanged
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Right Hemisphere
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1142459638}
-        m_TargetAssemblyTypeName: UnParent, Assembly-CSharp
-        m_MethodName: UnparentObject
-        m_Mode: 1
+      - m_Target: {fileID: 1142459641}
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10237,7 +10366,7 @@ MonoBehaviour:
   m_SmoothPosition: 1
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
-  m_TrackRotation: 1
+  m_TrackRotation: 0
   m_SmoothRotation: 1
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
@@ -10288,9 +10417,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1142459636}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7b531906fad09a4499f6c124f8b6596, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c2e3f1593156f84a9dd7c0b45d59299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ActZone: {fileID: 5310131084079386521, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  AxisInput: {fileID: 2719944015057279236, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &1158028039
 GameObject:
   m_ObjectHideFlags: 0
@@ -10435,10 +10566,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1196121302}
-  - component: {fileID: 1196121305}
   - component: {fileID: 1196121304}
   - component: {fileID: 1196121303}
-  - component: {fileID: 1196121306}
+  - component: {fileID: 1196121305}
   m_Layer: 0
   m_Name: Globus Pallidus group
   m_TagString: groups
@@ -10504,14 +10634,38 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1196121305}
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1962280805}
+        m_TargetAssemblyTypeName: AnatomyName, Assembly-CSharp
+        m_MethodName: NameChanged
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Globus Pallidus
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1196121305}
-        m_TargetAssemblyTypeName: UnParent, Assembly-CSharp
-        m_MethodName: UnparentObject
-        m_Mode: 1
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10564,7 +10718,7 @@ MonoBehaviour:
   m_SmoothPosition: 1
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
-  m_TrackRotation: 1
+  m_TrackRotation: 0
   m_SmoothRotation: 1
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
@@ -10615,21 +10769,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1196121301}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f049bde955f4e046a2557c5352e3d3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c2e3f1593156f84a9dd7c0b45d59299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1196121306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1196121301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7b531906fad09a4499f6c124f8b6596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  ActZone: {fileID: 5310131084079386521, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  AxisInput: {fileID: 2719944015057279236, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1001 &1199302897
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10873,7 +11017,6 @@ GameObject:
   - component: {fileID: 1204260610}
   - component: {fileID: 1204260613}
   - component: {fileID: 1204260612}
-  - component: {fileID: 1204260611}
   - component: {fileID: 1204260614}
   m_Layer: 0
   m_Name: White matter group
@@ -10881,7 +11024,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1204260610
 Transform:
   m_ObjectHideFlags: 0
@@ -10898,18 +11041,6 @@ Transform:
   m_Father: {fileID: 543450653045989281}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1204260611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1204260609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f049bde955f4e046a2557c5352e3d3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1204260612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10952,14 +11083,38 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1204260614}
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1962280805}
+        m_TargetAssemblyTypeName: AnatomyName, Assembly-CSharp
+        m_MethodName: NameChanged
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: White Matter
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1204260611}
-        m_TargetAssemblyTypeName: UnParent, Assembly-CSharp
-        m_MethodName: UnparentObject
-        m_Mode: 1
+      - m_Target: {fileID: 1204260614}
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11012,7 +11167,7 @@ MonoBehaviour:
   m_SmoothPosition: 1
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
-  m_TrackRotation: 1
+  m_TrackRotation: 0
   m_SmoothRotation: 1
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
@@ -11063,9 +11218,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1204260609}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7b531906fad09a4499f6c124f8b6596, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c2e3f1593156f84a9dd7c0b45d59299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ActZone: {fileID: 5310131084079386521, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  AxisInput: {fileID: 2719944015057279236, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &1238548396
 GameObject:
   m_ObjectHideFlags: 0
@@ -11749,10 +11906,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1317584591}
-  - component: {fileID: 1317584594}
   - component: {fileID: 1317584593}
   - component: {fileID: 1317584592}
-  - component: {fileID: 1317584595}
+  - component: {fileID: 1317584594}
   m_Layer: 0
   m_Name: Caudate group
   m_TagString: groups
@@ -11818,14 +11974,38 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1317584594}
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1962280805}
+        m_TargetAssemblyTypeName: AnatomyName, Assembly-CSharp
+        m_MethodName: NameChanged
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Caudate
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1317584594}
-        m_TargetAssemblyTypeName: UnParent, Assembly-CSharp
-        m_MethodName: UnparentObject
-        m_Mode: 1
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11878,7 +12058,7 @@ MonoBehaviour:
   m_SmoothPosition: 1
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
-  m_TrackRotation: 1
+  m_TrackRotation: 0
   m_SmoothRotation: 1
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
@@ -11929,21 +12109,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1317584590}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f049bde955f4e046a2557c5352e3d3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c2e3f1593156f84a9dd7c0b45d59299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1317584595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1317584590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7b531906fad09a4499f6c124f8b6596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  ActZone: {fileID: 5310131084079386521, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  AxisInput: {fileID: 2719944015057279236, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &1325742040
 GameObject:
   m_ObjectHideFlags: 0
@@ -12826,10 +12996,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1498559165}
-  - component: {fileID: 1498559168}
   - component: {fileID: 1498559167}
   - component: {fileID: 1498559166}
-  - component: {fileID: 1498559169}
+  - component: {fileID: 1498559168}
   m_Layer: 0
   m_Name: 4th ventrial group
   m_TagString: groups
@@ -12895,14 +13064,38 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1498559168}
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1962280805}
+        m_TargetAssemblyTypeName: AnatomyName, Assembly-CSharp
+        m_MethodName: NameChanged
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 4th Ventricle
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1498559168}
-        m_TargetAssemblyTypeName: UnParent, Assembly-CSharp
-        m_MethodName: UnparentObject
-        m_Mode: 1
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -12955,7 +13148,7 @@ MonoBehaviour:
   m_SmoothPosition: 1
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
-  m_TrackRotation: 1
+  m_TrackRotation: 0
   m_SmoothRotation: 1
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
@@ -13006,21 +13199,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1498559164}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f049bde955f4e046a2557c5352e3d3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c2e3f1593156f84a9dd7c0b45d59299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1498559169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1498559164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7b531906fad09a4499f6c124f8b6596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  ActZone: {fileID: 5310131084079386521, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  AxisInput: {fileID: 2719944015057279236, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1001 &1523107897
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14117,10 +14300,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1659853688}
-  - component: {fileID: 1659853691}
   - component: {fileID: 1659853690}
   - component: {fileID: 1659853689}
-  - component: {fileID: 1659853692}
+  - component: {fileID: 1659853691}
   m_Layer: 0
   m_Name: Putamen group
   m_TagString: groups
@@ -14186,14 +14368,38 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659853691}
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1962280805}
+        m_TargetAssemblyTypeName: AnatomyName, Assembly-CSharp
+        m_MethodName: NameChanged
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Putamen
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1659853691}
-        m_TargetAssemblyTypeName: UnParent, Assembly-CSharp
-        m_MethodName: UnparentObject
-        m_Mode: 1
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -14246,7 +14452,7 @@ MonoBehaviour:
   m_SmoothPosition: 1
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
-  m_TrackRotation: 1
+  m_TrackRotation: 0
   m_SmoothRotation: 1
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
@@ -14297,21 +14503,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1659853687}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f049bde955f4e046a2557c5352e3d3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c2e3f1593156f84a9dd7c0b45d59299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1659853692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1659853687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7b531906fad09a4499f6c124f8b6596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  ActZone: {fileID: 5310131084079386521, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  AxisInput: {fileID: 2719944015057279236, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &1683461804
 GameObject:
   m_ObjectHideFlags: 0
@@ -14321,10 +14517,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1683461805}
-  - component: {fileID: 1683461808}
   - component: {fileID: 1683461807}
   - component: {fileID: 1683461806}
-  - component: {fileID: 1683461809}
+  - component: {fileID: 1683461808}
   m_Layer: 0
   m_Name: Amygdala group
   m_TagString: groups
@@ -14390,14 +14585,38 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1683461808}
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1962280805}
+        m_TargetAssemblyTypeName: AnatomyName, Assembly-CSharp
+        m_MethodName: NameChanged
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Amygdala
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1683461808}
-        m_TargetAssemblyTypeName: UnParent, Assembly-CSharp
-        m_MethodName: UnparentObject
-        m_Mode: 1
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -14450,7 +14669,7 @@ MonoBehaviour:
   m_SmoothPosition: 1
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
-  m_TrackRotation: 1
+  m_TrackRotation: 0
   m_SmoothRotation: 1
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
@@ -14501,21 +14720,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1683461804}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f049bde955f4e046a2557c5352e3d3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c2e3f1593156f84a9dd7c0b45d59299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1683461809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1683461804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7b531906fad09a4499f6c124f8b6596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  ActZone: {fileID: 5310131084079386521, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  AxisInput: {fileID: 2719944015057279236, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &1687542248
 GameObject:
   m_ObjectHideFlags: 0
@@ -14575,10 +14784,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1692902313}
-  - component: {fileID: 1692902316}
   - component: {fileID: 1692902315}
   - component: {fileID: 1692902314}
-  - component: {fileID: 1692902317}
+  - component: {fileID: 1692902316}
   m_Layer: 0
   m_Name: Fornix group
   m_TagString: groups
@@ -14644,14 +14852,38 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1692902316}
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1962280805}
+        m_TargetAssemblyTypeName: AnatomyName, Assembly-CSharp
+        m_MethodName: NameChanged
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Fornix
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1692902316}
-        m_TargetAssemblyTypeName: UnParent, Assembly-CSharp
-        m_MethodName: UnparentObject
-        m_Mode: 1
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -14704,7 +14936,7 @@ MonoBehaviour:
   m_SmoothPosition: 1
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
-  m_TrackRotation: 1
+  m_TrackRotation: 0
   m_SmoothRotation: 1
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
@@ -14755,21 +14987,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1692902312}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f049bde955f4e046a2557c5352e3d3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c2e3f1593156f84a9dd7c0b45d59299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1692902317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1692902312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7b531906fad09a4499f6c124f8b6596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  ActZone: {fileID: 5310131084079386521, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  AxisInput: {fileID: 2719944015057279236, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &1699543745
 GameObject:
   m_ObjectHideFlags: 0
@@ -15342,10 +15564,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1770526553}
-  - component: {fileID: 1770526556}
   - component: {fileID: 1770526555}
   - component: {fileID: 1770526554}
-  - component: {fileID: 1770526557}
+  - component: {fileID: 1770526556}
   m_Layer: 0
   m_Name: Nucleus Accumbens group
   m_TagString: groups
@@ -15411,14 +15632,38 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1770526556}
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1962280805}
+        m_TargetAssemblyTypeName: AnatomyName, Assembly-CSharp
+        m_MethodName: NameChanged
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Nucelus Accumbens
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1770526556}
-        m_TargetAssemblyTypeName: UnParent, Assembly-CSharp
-        m_MethodName: UnparentObject
-        m_Mode: 1
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -15471,7 +15716,7 @@ MonoBehaviour:
   m_SmoothPosition: 1
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
-  m_TrackRotation: 1
+  m_TrackRotation: 0
   m_SmoothRotation: 1
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
@@ -15522,21 +15767,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1770526552}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f049bde955f4e046a2557c5352e3d3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c2e3f1593156f84a9dd7c0b45d59299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1770526557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1770526552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7b531906fad09a4499f6c124f8b6596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  ActZone: {fileID: 5310131084079386521, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  AxisInput: {fileID: 2719944015057279236, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &1783632957
 GameObject:
   m_ObjectHideFlags: 0
@@ -15850,10 +16085,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1816389990}
-  - component: {fileID: 1816389993}
   - component: {fileID: 1816389992}
   - component: {fileID: 1816389991}
-  - component: {fileID: 1816389994}
+  - component: {fileID: 1816389993}
   m_Layer: 0
   m_Name: Hippocampus group
   m_TagString: groups
@@ -15919,14 +16153,38 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1816389993}
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1962280805}
+        m_TargetAssemblyTypeName: AnatomyName, Assembly-CSharp
+        m_MethodName: NameChanged
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Hippocampus
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1816389993}
-        m_TargetAssemblyTypeName: UnParent, Assembly-CSharp
-        m_MethodName: UnparentObject
-        m_Mode: 1
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -15979,7 +16237,7 @@ MonoBehaviour:
   m_SmoothPosition: 1
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
-  m_TrackRotation: 1
+  m_TrackRotation: 0
   m_SmoothRotation: 1
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
@@ -16030,21 +16288,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1816389989}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f049bde955f4e046a2557c5352e3d3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c2e3f1593156f84a9dd7c0b45d59299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1816389994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1816389989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7b531906fad09a4499f6c124f8b6596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  ActZone: {fileID: 5310131084079386521, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  AxisInput: {fileID: 2719944015057279236, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1001 &1820571654
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16897,7 +17145,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 919132148776224032}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: RotateBrain, Assembly-CSharp
         m_MethodName: RotateButton
         m_Mode: 6
@@ -17392,6 +17640,154 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1959722760}
   m_CullTransparentMesh: 1
+--- !u!1 &1962280801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1962280802}
+  - component: {fileID: 1962280804}
+  - component: {fileID: 1962280803}
+  - component: {fileID: 1962280805}
+  m_Layer: 2
+  m_Name: NameDisplay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1962280802
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962280801}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 970937092}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 432}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1962280803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962280801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Name
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 26
+  m_fontSizeBase: 26
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1962280804
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962280801}
+  m_CullTransparentMesh: 1
+--- !u!114 &1962280805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962280801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f13fc327c0b7dd144895f7f0b05d8c9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1985594838
 GameObject:
   m_ObjectHideFlags: 0
@@ -18856,7 +19252,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 919132148776224032}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: RotateBrain, Assembly-CSharp
         m_MethodName: RotateButton
         m_Mode: 6
@@ -18915,10 +19311,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2067316747}
-  - component: {fileID: 2067316750}
   - component: {fileID: 2067316749}
   - component: {fileID: 2067316748}
-  - component: {fileID: 2067316751}
+  - component: {fileID: 2067316750}
   m_Layer: 0
   m_Name: Cerebellum group
   m_TagString: groups
@@ -18984,14 +19379,38 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2067316750}
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1962280805}
+        m_TargetAssemblyTypeName: AnatomyName, Assembly-CSharp
+        m_MethodName: NameChanged
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Cerebellum
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2067316750}
-        m_TargetAssemblyTypeName: UnParent, Assembly-CSharp
-        m_MethodName: UnparentObject
-        m_Mode: 1
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -19044,7 +19463,7 @@ MonoBehaviour:
   m_SmoothPosition: 1
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
-  m_TrackRotation: 1
+  m_TrackRotation: 0
   m_SmoothRotation: 1
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
@@ -19095,21 +19514,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2067316746}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f049bde955f4e046a2557c5352e3d3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c2e3f1593156f84a9dd7c0b45d59299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2067316751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2067316746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7b531906fad09a4499f6c124f8b6596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  ActZone: {fileID: 5310131084079386521, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  AxisInput: {fileID: 2719944015057279236, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1001 &2081290857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19727,12 +20136,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543450653045989281}
-  - component: {fileID: 919132148776224032}
   - component: {fileID: 919132148776224031}
   - component: {fileID: 919132148776224030}
   - component: {fileID: 919132148776224029}
   - component: {fileID: 919132148776224028}
   - component: {fileID: 919132148776224033}
+  - component: {fileID: 919132148776224034}
   m_Layer: 0
   m_Name: DecimatingBrainCollapseVarious
   m_TagString: Untagged
@@ -19807,10 +20216,34 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148776224034}
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148776224034}
+        m_TargetAssemblyTypeName: CustomRotation, Assembly-CSharp
+        m_MethodName: JoyStickEvent
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_Activated:
     m_PersistentCalls:
       m_Calls: []
@@ -19845,7 +20278,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_AttachTransform: {fileID: 793659375}
-  m_AttachEaseInTime: 0.15
+  m_AttachEaseInTime: 2
   m_MovementType: 2
   m_VelocityDamping: 1
   m_VelocityScale: 1
@@ -19855,7 +20288,7 @@ MonoBehaviour:
   m_SmoothPosition: 1
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
-  m_TrackRotation: 1
+  m_TrackRotation: 0
   m_SmoothRotation: 1
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
@@ -19897,19 +20330,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &919132148776224032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132148776224027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9aa43b5debd785b45a8dc78683a0c551, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotateSpeed: 20
 --- !u!114 &919132148776224033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19922,6 +20342,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e55cb48afd685ae44bdbd7ddc415c632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &919132148776224034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148776224027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c2e3f1593156f84a9dd7c0b45d59299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActZone: {fileID: 5310131084079386521, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  AxisInput: {fileID: 2719944015057279236, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &919132149533342182
 GameObject:
   m_ObjectHideFlags: 0

@@ -80,7 +80,6 @@ public class Slice : MonoBehaviour
         // Otherwise, parent to this object's parent
         GameObject obj = new GameObject();
         //add a transform variable for the xr attachment point modification
-        // ^
         obj.name = "Slice";
         obj.tag = this.tag;
 
@@ -125,7 +124,7 @@ public class Slice : MonoBehaviour
         //Mo.na Copy XR grab to this fragment, no inherits, just default grab values
         var XRComponent = obj.AddComponent<XRGrabInteractable>();
         XRComponent.forceGravityOnDetach = false;
-        XRComponent.trackRotation = true;
+        XRComponent.trackRotation = false;
         XRComponent.throwOnDetach = false;
         // Now we need to attach the transform of the attachpoint onto the XRGrabComponent for each fragment
         XRComponent.attachTransform = attachpoint.transform;

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
+// this script finds all gameobjects with "groups" tag and sets their XRGrabComponent to
+// either active or inactive based on the bool "inactive" <- poorly named
 public class XRGrabSetInactive : MonoBehaviour
 {
     public void GrabSetInactive (bool inactive)

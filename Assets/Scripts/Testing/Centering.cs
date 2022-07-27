@@ -9,7 +9,7 @@ public class Centering : MonoBehaviour
     {
         GameObject obj = new GameObject();
         obj.transform.SetParent(gameObject.transform);
-        obj.transform.position = gameObject.GetComponentInChildren<Renderer>().bounds.center;
+        obj.transform.localPosition = gameObject.GetComponentInChildren<Renderer>().bounds.center;
         obj.transform.RotateAround(transform.position, transform.up, 180f);
         var XRComponent = gameObject.GetComponent<XRGrabInteractable>();
         XRComponent.attachTransform = obj.transform;

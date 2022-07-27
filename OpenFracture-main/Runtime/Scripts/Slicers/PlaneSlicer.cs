@@ -2,6 +2,10 @@ using UnityEngine;
 using UnityEngine.TestTools;
 using UnityEngine.InputSystem;
 
+
+// modified to use the action based input system
+// the first two methods registers the "Pressed" method to the trigger event defined in the inspector window
+// the "Pressed" method takes the CallBackContext ie. the trigger event to do it's thing
 [ExcludeFromCoverage]
 public class PlaneSlicer : MonoBehaviour
 {
