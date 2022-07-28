@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class CustomRotation : MonoBehaviour
 {
@@ -9,28 +10,15 @@ public class CustomRotation : MonoBehaviour
 
     public InputActionReference AxisInput = null;
 
-    private bool objRotOn = false;
+    private XRGrabInteractable XRComponent = null;
 
-    public void JoyStickEvent (bool active)
+    public void Start()
     {
-        //if (active == true)
-        //{
-        //    ActZone.action.started += Rotator;
-        //} else if (active == false)
-        //{
-        //    ActZone.action.started -= Rotator;
-        //}
-        objRotOn = active;
+        XRComponent = gameObject.GetComponent<XRGrabInteractable>();
     }
-
-    private void Rotator (InputAction.CallbackContext context)
-    {
-        //left this here in case a method needs to be call upon action
-    }
-
     void Update()
     {
-        if (objRotOn)
+        if (XRComponent.isSelected)
         {
             var AxisState = AxisInput.action.ReadValue<float>();
             int AxisInt = (int)AxisState;
