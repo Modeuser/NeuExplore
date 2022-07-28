@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
 using ImgSpc.Exporters;
+using CustomRotationNS;
 
 [RequireComponent(typeof(MeshFilter))]
 [RequireComponent(typeof(MeshRenderer))]
@@ -133,6 +134,16 @@ public class Slice : MonoBehaviour
         // *test* add a exporter component to each slice
         var ExportComponent = obj.AddComponent<ImgSpcExportMarker>();
 
+        // *test* add CustomRotation component with reference to input action
+        var thisCustomRC = GameObject.FindGameObjectWithTag("groups");
+        var LOGO = thisCustomRC.GetComponent<CustomRotation>();
+        var CustomRotationComponent = obj.AddComponent<CustomRotation>();
+        CustomRotationComponent.ActZone = LOGO.ActZone;
+        CustomRotationComponent.AxisInput = LOGO.AxisInput;
+        // this solution is horrible and totally fucked
+        //  it appears that you cannot reference the parent GO when creating the slice
+        //  therefore to get the input action reference, you need to access a separate GO in the scene...
+        // but if it works... it works :P
 
         //add Paint3D components... maybe when the materials aren't all mixed up...
         //var P3D = obj.AddComponent<PaintIn3D.P3dPaintable>();
