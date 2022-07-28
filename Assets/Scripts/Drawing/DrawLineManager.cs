@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
+using ImgSpc.Exporters;
 
 
 public class DrawLineManager : MonoBehaviour
@@ -72,13 +72,21 @@ public class DrawLineManager : MonoBehaviour
         meshRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
         meshRenderer.receiveShadows = false;
         // remove later
+
+        // *test* add a export component to each stroke
+        var exportComponent = go.AddComponent<ImgSpcExportMarker>();
+
+        //puts all strokes under the draw manager component
+        go.transform.SetParent(gameObject.transform);
+
+
         currentLine = go.AddComponent<MeshLineRenderer>();
 
         currentLine.lmat = CurrentMAT;
         //setWidth is a function in MeshLineRenderer
         currentLine.setWidth(Thickness);
 
-        //testing
+        // *test* having each stroke named for future features
         StrokeCount++;
         go.name = "Stroke" + StrokeCount;
     }

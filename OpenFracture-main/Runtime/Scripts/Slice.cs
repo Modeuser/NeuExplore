@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
+using ImgSpc.Exporters;
 
 [RequireComponent(typeof(MeshFilter))]
 [RequireComponent(typeof(MeshRenderer))]
@@ -128,6 +129,10 @@ public class Slice : MonoBehaviour
         XRComponent.throwOnDetach = false;
         // Now we need to attach the transform of the attachpoint onto the XRGrabComponent for each fragment
         XRComponent.attachTransform = attachpoint.transform;
+
+        // *test* add a exporter component to each slice
+        var ExportComponent = obj.AddComponent<ImgSpcExportMarker>();
+
 
         //add Paint3D components... maybe when the materials aren't all mixed up...
         //var P3D = obj.AddComponent<PaintIn3D.P3dPaintable>();
