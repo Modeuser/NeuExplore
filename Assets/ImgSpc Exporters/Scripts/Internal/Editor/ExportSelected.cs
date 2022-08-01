@@ -8,6 +8,10 @@
 /// you have to enter the file extension you want the file to save as.
 /// </summary>
 
+// to fix the compiler issue while building that refers to a missing namespace for "menuitem"
+#if UNITY_EDITOR
+
+
 using UnityEditor;
 
 namespace ImgSpc.Exporters
@@ -110,3 +114,4 @@ namespace ImgSpc.Exporters
         }
     }
 }
+#endif
