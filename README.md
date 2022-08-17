@@ -11,3 +11,5 @@ Build details:
 - Can run at 72fps on the Quest 1 (althought slices performed on the cortex may cause lag spikes)
 
 Credits to dgreenheck for the OpenFracture package: https://github.com/dgreenheck/OpenFracture
+
+Credits to FusedVR for his tutorial on procedural drawing https://twitter.com/FusedVR
